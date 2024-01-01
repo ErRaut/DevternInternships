@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Authentication</title>
+    <link rel="stylesheet" href="LogicAuth.css">
+</head>
+<body>
+    <div class="mainData">
+
+        <h1 class="logo">Login Authentication</h1>
+        <form class="info" action = "home.html" method="post" name="form" onsubmit="return validated()"> 
+
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">Please fill up your Email or Phone</div>
+
+            <div class="font font2">Username</div>
+            <input autocomplete="off" type="text" name="username">
+            <div id="user_error">Please fill up your Username</div>
+
+            <div class="font font3">Password</div>
+            <input autocomplete="off" type="password" name="password">
+            <div id="pass_error">Please fill up your Password</div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="LogicAuth.js"></script>
+</body>
+</html>

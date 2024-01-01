@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('backImg.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainData{
+    position: relative;
+    margin-top: 100px;
+    width: 578px;
+    height: auto;
+    background: #130f40;
+    border-radius: 30px;
+}
+
+.logo{
+    padding: 20px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color:white;
+}
+
+.info{
+    padding: 0 120px;
+}
+
+.info .font{
+    font-size: 18px;
+    color: white;
+    margin: 5px 0;
+}
+
+.info input{
+    height: 30px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+
+.info .font2{
+    margin-top: 20px;
+}
+
+.info .font3 {
+    margin-top: 20px;
+}
+
+.info button{
+    margin: 70px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #130f40;
+    transition: .5s;
+}
+
+.info button:hover{
+    background: #130f40;
+}
+
+.info #email_error,
+.info #user_error,
+.info #pass_error{
+    margin-top:  5px;
+    width: 345px;
+    font-size: 18px;
+    color: red;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: solid;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
