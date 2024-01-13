@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background: linear-gradient(90deg, #0f0524, #1e0343, #180218);
+    border-bottom: #30014e 1px solid;
+    position: absolute; 
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 8;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover , button:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 22px;
+}
+
+nav h1{
+    color: white;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    padding: 15px;
+    color: white;
+}
+
+button{
+    border: none;
+    background-color: #9000ff;
+    color: white;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    border-radius: 2em;
+}
+
+.slant{
+    background: linear-gradient(90deg, #04000d, #1d0146, #05020a);
+    clip-path: polygon(100% 0% , 100% 94% , 33% 62% , 0 79% , 0% 50% , 0 0);
+    width: 100%;
+    height: 100vh;
+    transition: .7s;
+    z-index: -8;
+}
+
+.caption_section{
+    padding: 9px;
+}
+
+.caption_section h1, .caption_section h2{
+    text-align: center;
+}
+
+.caption_section h1{
+    font-size: 2.4em;
+    color: white;
+    margin: 2.2em 0 0.2em 0;
+}
+
+.caption_section h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.caption_section button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 17px;
+    border: 0;
+    padding: 0.9em 2em 0.9em 2em;
+}
+
+.main_section{
+    position: absolute;
+    top: 22em;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    width: 90%;
+    display: grid;
+    gap: 0.8em;
+    grid-template-columns: repeat(auto-fit, minmax(min(290px , 100%), 2fr));
+}
+
+.main_section div{
+    display: inline-block;
+    text-align: right; 
+    color: #2d012d;
+}
+
+.main_section div h1{
+    margin-top: 19%;
+    font-size: 3em;
+    font-weight: 200;
+    color: #42028a;
+}
+
+.main_section div h2{
+    font-size: 1.3em;
+    padding: 0.1em 0 0.1em 0;
+}
+
+.main_section div h3{
+    font-size: 2em;
+    padding: 4px 0 4px 0;
+    color: #3b0366;
+}
+
+.main_section h3 span{
+    color: #939394;
+    text-decoration: line-through;
+}
+
+.main_section div p{
+    display: block;
+    font-size: 1.3em;
+    margin-top: 0.2em;
+    color: #24014b;
+}
+
+.main_section div img{
+    display: block;
+    margin-left: 40px;
+    width: 65%;
+}
+
+.product_services, .other_products, footer{
+    display: grid;
+    gap: 0.8em;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 2fr));
+}
+
+.product_services{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 12%;
+    margin-bottom: 3em;
+}
+
+.product_services div{
+    background-color: white;
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+    color: #646464;
+}
+
+.product_services div img{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.product_services div h4{
+    font-size: 24px;
+    padding: 20px;
+}
+
+.product_services div button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 9px;
+    background-color: transparent;
+    border: #42028a 1px solid;
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    color: #42028a;
+}
+
+.other_products{
+    padding-bottom: 4em;
+    text-align: center;
+    font-size: 1.5em;
+    color: #5f5f5f;
+}
+.suggested_product_header{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.4em;
+    color: #3f3f3f;
+}
+
+.other_products div img {
+    width: 85%;
+}
+
+footer{
+    padding: 34px;
+    background-color: #180218;
+    color: #b8a8c3;
+}
+
+footer h4{
+    padding-bottom: 6px;
+    font-size: 1.5em;
+}
+
+footer a{
+    display: block;
+    width: 90%;
+    padding: 3px 0 3px 0;
+    color: white;
+}
+
+footer img{
+    margin: 0.5em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer img:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+@media(max-width: 700px){
+    mobile_menu_icon{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        top: -70em;
+        right: 0;
+        background-color: #0c0120;
+        width: 100%;
+        height: 100vh;
+        transition: .7s;
+    }
+    li{
+        display: block;
+    }
+    li a{
+        display: block;
+        font-size: 20px;
+        padding: 20px 0 20px 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .slant{
+        clip-path: polygon(100% 0%, 100% 39% , 48% 42% , 0 38% , 0 15% , 0 0);
+    }
+    .main_section div{
+        text-align: center;
+    }
+    .caption_section h1{
+        font-size: 1.8em;
+        margin: 2.2em 0 0.5em 0;
+    }
+    .main_section div h1{
+        margin-top: 6%;
+        font-size: 2.2em;
+        font-weight: 200;
+        color: #42028a;
+        text-shadow: white 0.7px 0.7px 0.2px;
+    }
+    .product_services{
+        margin-top: 23em;
+    }
+}
